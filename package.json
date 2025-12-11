@@ -10,7 +10,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.2.1",
-    "@vendia/serverless-express": "^4.10.0"
+    "@vendia/serverless-express": "^4.10.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1"
   }
 }
