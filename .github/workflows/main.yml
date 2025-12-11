@@ -41,8 +41,8 @@ jobs:
         input: '.'
         exit-code: '1'
         severity: 'CRITICAL,HIGH'
-        format: json
-        output: trivy-fs-scan.json
+        format: 'json'
+        output: 'trivy-fs-scan.json'
 
     - name: Sonarqube Scan
       uses: sonarsource/sonarqube-scan-action@v2
