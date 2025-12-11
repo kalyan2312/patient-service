@@ -41,8 +41,8 @@ jobs:
         input: '.'
         exit-code: '1'
         severity: 'CRITICAL,HIGH'
-        format: html
-        output: trivy-fs-scan.html
+        format: json
+        output: trivy-fs-scan.json
 
     - name: Sonarqube Scan
       uses: sonarsource/sonarqube-scan-action@v2
@@ -72,8 +72,8 @@ jobs:
         image-ref: ${{ env.ECR_REPO }}:${{ env.IMAGE_TAG }}
         exit-code: '1'
         severity: 'CRITICAL,HIGH'
-        format: html
-        output: trivy-image-scan.html
+        format: json
+        output: trivy-image-scan.json
         
     - name: Install Dockle
       run: |
