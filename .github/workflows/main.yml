@@ -3,6 +3,7 @@ name: patient-service
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 env:
   AWS_REGION: ap-south-1
   ACCOUNT_ID: 381492087649
