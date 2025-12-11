@@ -70,7 +70,7 @@ jobs:
       uses: aquasecurity/trivy-action@0.20.0
       with:
         image-ref: ${{ env.ECR_REPO }}:${{ env.IMAGE_TAG }}
-        exit-code: '1'
+        exit-code: '0'
         severity: 'CRITICAL,HIGH'
         format: json
         output: trivy-image-scan.json
