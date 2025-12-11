@@ -38,7 +38,7 @@ jobs:
       uses: aquasecurity/trivy-action@0.20.0
       with:
         scan-type: 'fs'
-        input: '.'
+        scan-ref: '.'
         exit-code: '1'
         severity: 'CRITICAL,HIGH'
         format: 'json'
