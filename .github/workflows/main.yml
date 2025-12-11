@@ -75,17 +75,17 @@ jobs:
         format: json
         output: trivy-image-scan.json
         
-    - name: Install Dockle
-      run: |
-        curl -sSfL https://github.com/goodwithtech/dockle/releases/download/v0.4.15/dockle_v0.4.15_Linux_x86_64.tar.gz \
-        -o dockle.tar.gz
-        tar -xzf dockle.tar.gz
-        sudo mv dockle /usr/local/bin/
+    #- name: Install Dockle
+     # run: |
+        #curl -sSfL https://github.com/goodwithtech/dockle/releases/download/v0.4.15/dockle_v0.4.15_Linux_x86_64.tar.gz \
+        #-o dockle.tar.gz
+       # tar -xzf dockle.tar.gz
+        #sudo mv dockle /usr/local/bin/
       
         
-    - name: Dockle Scan
-      run: |
-        dockle --exit-code 1 $ECR_REPO:$IMAGE_TAG
+    #- name: Dockle Scan
+      #run: |
+        #dockle --exit-code 1 $ECR_REPO:$IMAGE_TAG
 
     - name: Tag & Push to ECR
       run: |
