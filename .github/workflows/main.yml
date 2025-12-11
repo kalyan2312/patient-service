@@ -77,9 +77,11 @@ jobs:
         
     - name: Install Dockle
       run: |
-        curl -sSfL https://github.com/goodwithtech/dockle/releases/latest/download/dockle_Linux_x86_64.tar.gz \
-        | tar -xz
+        curl -sSfL https://github.com/goodwithtech/dockle/releases/download/v0.4.15/dockle_v0.4.15_Linux_x86_64.tar.gz \
+        -o dockle.tar.gz
+        tar -xzf dockle.tar.gz
         sudo mv dockle /usr/local/bin/
+      
         
     - name: Dockle Scan
       run: |
