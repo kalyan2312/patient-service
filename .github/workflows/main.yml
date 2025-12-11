@@ -6,7 +6,7 @@ on:
 env:
   AWS_REGION: ap-southeast-1
   ACCOUNT_ID: accountid
-  GITHUB_OIDC_ROLE: role
+  GITHUB_OIDC_ROLE: arn:aws:iam::381492087649:role/github-actions-deploy-role
   ECR_REPO: my-node-app
   IMAGE_TAG: $GITHUB_RUN_ID
   LAMBDA_NAME: patient-service
