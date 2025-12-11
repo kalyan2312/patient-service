@@ -9,7 +9,7 @@ env:
   GITHUB_OIDC_ROLE: arn:aws:iam::381492087649:role/github-actions-deploy-role
   ECR_REPO: my-node-app
   IMAGE_TAG: $GITHUB_RUN_ID
-  LAMBDA_NAME: patient-service
+  LAMBDA_NAME: patient-service-lambda
   SONAR_HOST_URL: Sonar URL
   SONAR_PROJECT_KEY: patient-service
 permissions:
