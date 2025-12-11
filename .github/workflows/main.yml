@@ -11,7 +11,7 @@ env:
   ECR_REPO: bayer-hackathon-registry
   IMAGE_TAG: $GITHUB_RUN_ID
   LAMBDA_NAME: patient-service-lambda
-  SONAR_HOST_URL: Sonar URL
+  SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
   SONAR_PROJECT_KEY: patient-service
 permissions:
   id-token: write
