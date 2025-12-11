@@ -9,7 +9,7 @@ env:
   ACCOUNT_ID: 381492087649
   GITHUB_OIDC_ROLE: arn:aws:iam::381492087649:role/github-actions-deploy-role
   ECR_REPO: bayer-hackathon-registry
-  IMAGE_TAG: ${{ github_run_id }}
+  IMAGE_TAG: ${{ github.run_id }}
   LAMBDA_NAME: patient-service-lambda
   SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
   SONAR_PROJECT_KEY: patient-service
